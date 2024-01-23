@@ -7,7 +7,7 @@
 /* Espacement */
 
 /* Composantes individuelles (Ex: bouton) */
-
+@import url("./components/navigation.css");
 /* Modules/mise en page spéciale (Ex: Grilles, formulaires)*/
 
 /* Exceptions pour certaines pages */

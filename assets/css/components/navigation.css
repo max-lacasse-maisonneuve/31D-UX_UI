@@ -15,14 +15,14 @@ nav {
         display: none;
         cursor: pointer;
         font-size: 24px;
+        color: #fff;
     }
-}
 
-@media screen and (max-width: 768px) {
-    nav {
+    @media (max-width: 768px) {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         text-align: center;
+
         & a {
             margin-top: 10px;
         }
@@ -35,11 +35,13 @@ nav {
             display: none;
         }
 
-        & .nav-links.show {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            text-align: center;
+        &[data-opened="true"] {
+            & .nav-links {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
         }
     }
 }
