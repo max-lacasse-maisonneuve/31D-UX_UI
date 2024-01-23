@@ -1,10 +1,11 @@
 /* Variables */
-:root {
-    --couleur-principale: tomato;
-}
-body {
-    background-color: var(--couleur-principale);
-}
+@import url("./variables/reset.css");
+@import url("./variables/mediaqueries.css");
+
+/* Couleurs */
+/* Typo */
+/* Espacement */
+
 /* Composantes individuelles (Ex: bouton) */
 
 /* Modules/mise en page spéciale (Ex: Grilles, formulaires)*/

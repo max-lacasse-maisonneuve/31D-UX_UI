@@ -1,0 +1,8 @@
+:root {
+    /* Desktop first */
+    --media-wide: 1400px;
+    --media-desktop: 1200px;
+    --media-tablet-landscape: 1024px;
+    --media-tablet-portrait: 768px;
+    --media-phone: 480px;
+}
