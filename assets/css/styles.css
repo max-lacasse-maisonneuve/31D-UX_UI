@@ -1,0 +1,12 @@
+/* Variables */
+:root {
+    --couleur-principale: tomato;
+}
+body {
+    background-color: var(--couleur-principale);
+}
+/* Composantes individuelles (Ex: bouton) */
+
+/* Modules/mise en page spéciale (Ex: Grilles, formulaires)*/
+
+/* Exceptions pour certaines pages */
