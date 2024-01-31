@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500;1,700&display=swap");
+@font-face {
+    font-family: "CranberryGin";
+    src: url("../../fonts/cranberry_gin/Cranberry\ Gin.otf") format("opentype");
+}
+:root {
+    --police-principale: "Roboto", sans-serif;
+    --police-secondaire: "CranberryGin", monospace;
+    --police-xxs: 0.694rem;
+    --police-xs: 0.833rem;
+    --police-s: 1rem;
+    --police-xxxl: 10rem;
+}
+
+body,
+html {
+    font-family: var(--police-secondaire);
+}
+
+h1 {
+    font-size: var(--police-s);
+    font-weight: 400;
+}
+
+.ultra-grand-titre {
+    font-size: var(--police-xxxl);
+}

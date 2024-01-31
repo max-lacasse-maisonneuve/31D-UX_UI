@@ -1,0 +1,18 @@
+:root {
+    --coul-principale: tomato;
+    --coul-secondaire: cornflowerblue;
+    --coul-secondaire-pale: rgb(181, 202, 243);
+    --coul-secondaire-fonce: rgb(63, 82, 118);
+    --coul-accent: rgb(220, 220, 38);
+    --coul-noir: #17161a;
+    --coul-blanc: #dfdeeb;
+
+    --coul-info: #2196f3;
+    --coul-succes: #4caf50;
+    --coul-avertissement: #ff9800;
+    --coul-danger: #f44336;
+    --coul-muted: #6c757d;
+
+    --coul-bouton-fond: var(--coul-principale);
+    /* Ajoutez vos couleurs au fur et à mesure */
+}
