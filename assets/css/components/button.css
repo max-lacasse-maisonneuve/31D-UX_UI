@@ -1,0 +1,19 @@
+.button {
+    width: fit-content;
+    padding: var(--space-s);
+    background-color: var(--coul-accent);
+    color: var(--coul-noir);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px var(--coul-noir);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--coul-secondaire-fonce);
+    }
+
+    &.inactive {
+        background-color: var(--coul-muted);
+        pointer-events: none;
+        cursor: none;
+    }
+}
