@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    /* padding: var(--space-s); */
+    width: 100%;
+    & .card__image {
+        max-width: 100%;
+        & img {
+            max-width: 100%;
+        }
+    }
+}
