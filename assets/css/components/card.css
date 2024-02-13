@@ -5,11 +5,41 @@
     text-align: center;
     flex-direction: column;
     /* padding: var(--space-s); */
+    border: 2px solid var(--coul-principale);
+    background-color: var(--coul-secondaire-pale);
     width: 100%;
+
     & .card__image {
+        height: 75px;
         max-width: 100%;
+        overflow: hidden;
+        position: relative;
+
         & img {
+            height: 100%;
             max-width: 100%;
+            object-fit: cover;
+            filter: brightness(0.4);
+            transition: filter 350ms;
         }
+
+        & h6 {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: var(--coul-blanc);
+        }
+
+        &:hover {
+            & img {
+                filter: brightness(1);
+            }
+        }
+    }
+    & .card__title {
+        padding: var(--space-xs);
     }
 }

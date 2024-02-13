@@ -16,6 +16,8 @@
 @import url("./components/button.css");
 @import url("./components/card.css");
 @import url("./components/filters.css");
+@import url("./components/carrousel.css");
+
 /* Modules/mise en page spéciale (Ex: Grilles, formulaires)*/
 @import url("./layout/general.css");
 @import url("./layout/grilleCarte.css");

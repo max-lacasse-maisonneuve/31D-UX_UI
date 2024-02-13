@@ -1,0 +1,17 @@
+.carrousel {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-m);
+    border: 2px solid tomato;
+
+    & .carrousel__image {
+        width: 50px;
+        height: 25px;
+    }
+
+    @media (max-width: 480px) {
+        align-items: center;
+        flex-direction: column;
+        gap: var(--space-s);
+    }
+}
