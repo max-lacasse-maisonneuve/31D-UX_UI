@@ -1,8 +1,8 @@
 :root {
     --coul-principale: tomato;
-    --coul-secondaire: cornflowerblue;
-    --coul-secondaire-pale: rgb(181, 202, 243);
-    --coul-secondaire-fonce: rgb(63, 82, 118);
+    --coul-secondaire: rgb(100, 237, 141);
+    --coul-secondaire-pale: color-mix(in oklab, var(--coul-secondaire) 50%, var(--coul-principale) 50%);
+    --coul-secondaire-fonce: color-mix(in oklab, var(--coul-secondaire) 60%, rgba(0, 0, 0, 0.5));
     --coul-accent: rgb(220, 220, 38);
     --coul-noir: #17161a;
     --coul-blanc: #eae8fe;
