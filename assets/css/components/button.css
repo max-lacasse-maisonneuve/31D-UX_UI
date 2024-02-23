@@ -1,3 +1,22 @@
+@keyframes boutonNotAllowedAnim {
+    0% {
+        transform: translateX(0px);
+    }
+    15% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+
+    85% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .button {
     width: fit-content;
     padding: var(--space-s);
@@ -6,6 +25,7 @@
     border-radius: 15px;
     box-shadow: 10px 10px 10px var(--coul-noir);
     cursor: pointer;
+    transition: all 250ms;
 
     &:hover {
         background-color: var(--coul-secondaire-fonce);
@@ -15,5 +35,9 @@
         background-color: var(--coul-muted);
         pointer-events: none;
         cursor: none;
+    }
+
+    &[data-state="not-allowed"] {
+        animation: "boutonNotAllowedAnim" 500ms 1 ease-in-out;
     }
 }

@@ -1,0 +1,26 @@
+@keyframes curveAnim {
+    0% {
+        fill: red;
+    }
+    100% {
+        fill: blue;
+    }
+}
+.curve {
+    & path {
+        animation: "curveAnim" 5000ms ease-in-out infinite alternate;
+    }
+}
+
+.cls-2 {
+    fill: tomato;
+    stroke: aqua;
+}
+.home {
+    & .icon {
+        fill: green;
+    }
+    & .icon-bg {
+        fill: cornflowerblue;
+    }
+}

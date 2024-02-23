@@ -22,4 +22,7 @@
 @import url("./layout/general.css");
 @import url("./layout/grilleCarte.css");
 @import url("./layout/hero.css");
+
 /* Exceptions pour certaines pages */
+/*DOIT ÊTRE À LA FIN*/
+@import url("./pages/accueil.css");

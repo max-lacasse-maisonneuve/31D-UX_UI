@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Un site d'enchères de timbre" />
+        <meta name="author" content="Maxime Lacasse" />
+        <meta name="keywords" content="" />
         <title>Lord Stampee - Enchères de timbres</title>
+        <script src=" https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js "></script>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -11,10 +15,15 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="assets/css/styles.css" />
+        <!-- Pour développement -->
+        <!-- <link rel="stylesheet" href="assets/css/styles.css" /> -->
+
+        <!-- Pour production -->
+        <link rel="stylesheet" href="build/css/stylesfinaux.css" />
+
         <script src="assets/js/main.js" defer></script>
     </head>
-    <body class="">
+    <body class="" data-page="accueil" data-theme="halloween">
         <div class="popup__conteneur">
             <div class="popup__contenu">
                 <h1>ALlo</h1>
@@ -30,14 +39,24 @@
             </nav>
         </header>
         <div class="hero">
-            <img src="assets/img/photos/feuilles.jpg" alt="" />
+            <img src="assets/img/photos/feuilles.jpg" alt="" loading="lazy" />
+            <video
+                src="assets/video/intro.mp4"
+                poster="assets/img/photos/feuilles.jpg"
+                preload="none"
+                controls
+                height="300px"
+                width="600px"
+            ></video>
             <h1><span>T</span>itre 1</h1>
             <div class="glass"></div>
         </div>
         <main>
-            <!-- <div class="button inactive">
-                <a class="button__text" href="/"><i class="icon fa-solid fa-trash"></i> Supprimer</a>
-            </div> -->
+            <section>
+                <div class="button inactive" data-state="not-allowed">
+                    <a class="button__text" href="/"><i class="icon fa-solid fa-trash"></i> Supprimer</a>
+                </div>
+            </section>
 
             <aside class="filters">
                 <form action="">
@@ -100,7 +119,8 @@
                     <div class="card__title">Titre</div>
                 </div>
             </section>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <img src="" alt="" />
+            <svg class="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
                     fill="#0099ff"
                     fill-opacity="1"
@@ -115,5 +135,18 @@
                 <div class="carrousel__image">Patate</div>
             </div>
         </section>
+
+        <svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.14 159.32">
+            <g id="Calque_1-2" data-name="Calque 1">
+                <g>
+                    <rect class="cls-2" x=".5" y="9.92" width="114.65" height="135.67" />
+                    <line class="cls-1" x1="162.92" y1=".36" x2="329.8" y2="158.96" />
+                </g>
+            </g>
+        </svg>
+        <svg class="home" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+            <path class="icon-bg" d="M0 0h48v48H0z" fill="none" />
+            <path class="icon" d="M20 40V28h8v12h10V24h6L24 6 4 24h6v16z" />
+        </svg>
     </body>
 </html>

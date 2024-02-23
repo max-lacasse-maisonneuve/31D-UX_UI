@@ -1,5 +1,5 @@
 :root {
-    --coul-principale: tomato;
+    --coul-principale: white;
     --coul-secondaire: rgb(100, 237, 141);
     --coul-secondaire-pale: color-mix(in oklab, var(--coul-secondaire) 50%, var(--coul-principale) 50%);
     --coul-secondaire-fonce: color-mix(in oklab, var(--coul-secondaire) 60%, rgba(0, 0, 0, 0.5));
@@ -14,5 +14,4 @@
     --coul-muted: #6c757d;
 
     --coul-bouton-fond: var(--coul-principale);
-    /* Ajoutez vos couleurs au fur et à mesure */
 }

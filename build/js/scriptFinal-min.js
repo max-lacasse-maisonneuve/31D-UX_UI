@@ -1,0 +1,1 @@
+const nav=document.querySelector("nav");nav.addEventListener("click",function(){const e="true"===nav.dataset.opened;nav.dataset.opened=!e});
